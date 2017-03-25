@@ -1,0 +1,290 @@
+/*-------------------------共性----------------------------*/
+h3{
+    font-family: 微软雅黑,serif !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    letter-spacing: 3px;
+    color: #a980cd !important;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 32px;
+}
+
+/*------------------------大图轮播---------------------*/
+.banner .swiper-slide a{
+    display: block;
+}
+
+.banner img{
+    width: 100%;
+}
+.banner .swiper-button-prev,
+.banner .swiper-button-next{
+    background-image: none;
+    font-size: 36px;
+    color: #9acfea;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+.banner .swiper-button-prev{
+    margin-left: 60px;
+}
+
+.banner .swiper-button-next{
+    margin-right: 60px;
+}
+
+.banner .swiper-pagination-bullet{
+     width: 12px;
+     height: 12px;
+     background: green;
+ }
+
+/*.banner .swiper-pagination-bullet-active{*/
+   /*background: #e4b9b9;*/
+/*}*/
+
+/*-----------------------------Welcome to Narrow---------------------------------------*/
+.welcome{
+    padding-bottom: 200px;
+}
+
+.welcome .row:nth-of-type(1){
+    margin: 100px 0;
+}
+
+.welcome .left{
+    height: 450px;
+    padding: 0;
+    position: relative;
+}
+
+.welcome .left .cover{
+     height: 100%;
+     background: url("../imgs/work-1.jpg") 50% 50%;
+ }
+
+.welcome .left .desc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 40px;
+    background-color: rgba(0,0,0,0.15);
+}
+
+.welcome .left .desc p{
+    color: #fff;
+}
+
+.welcome .left .desc span{
+    color: rgba(255,255,255,0.8);
+    font-size: 16px;
+}
+
+.welcome .right{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.welcome .right .hero{
+    height: calc(370px/3);
+    overflow: hidden;
+}
+
+.welcome .right .hero .cover{
+    width: 170px;
+    height: 100%;
+    background-position: 50% 50%;
+    float: left;
+    margin: 0 25px;
+}
+
+.welcome .right .hero .desc span{
+    display: inline-block;
+    font-size: 16px;
+    color: #999;
+    margin-top: 10px;
+}
+
+@media (max-width: 992px){
+    .welcome .left{
+        margin-bottom: 40px;
+    }
+
+    .welcome .right {
+        height: calc(450px * 3 + 80px);
+    }
+
+    .welcome .right .hero{
+        height: 450px;
+        position: relative;
+    }
+
+    .welcome .right .hero .cover{
+        width: 100%;
+        margin: 0;
+    }
+
+    .welcome .right .hero .desc {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 40px;
+        background-color: rgba(0,0,0,0.15);
+    }
+
+    .welcome .right .hero .desc p{
+        color: #fff;
+    }
+
+    .welcome .right .hero .desc span{
+        color: rgba(255,255,255,0.8);
+    }
+
+}
+
+/*------------------------------intro------------------------------------*/
+.intro{
+    height: 450px;
+    background: url(../imgs/intro.jpg) fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro button{
+    padding: 35px;
+    border: 5px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 24px;
+    font-family: 微软雅黑,serif;
+    font-weight: bold;
+}
+
+.intro button:active{
+    box-shadow: 10px -10px 1px 10px #9acfea inset,-10px 10px 5px 10px #9acfea inset;
+}
+
+/*-----------------------------products-----------------------------*/
+.products{
+    padding: 160px 0;
+}
+
+.products .s-slide{
+    position: relative;
+}
+
+.products .swiper-container{
+    margin-top: 120px;
+    position: static;
+}
+
+.products .swiper-slide a{
+    display: block;
+}
+
+.products .swiper-slide a img{
+    width: 100%;
+}
+
+.products .swiper-button-prev,
+.products .swiper-button-next{
+    background-image: none;
+    font-size: 20px;
+    width: 40px;
+    color: #d980cd;
+    /*background-color: lawngreen;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: 0.2s;
+}
+
+.products .swiper-button-prev{
+    left: -45px;
+}
+
+.products .swiper-button-prev:hover{
+    transform: translate(-15px,-5px);
+}
+
+.products .swiper-button-next{
+    right: -45px;
+}
+
+.products .swiper-button-next:hover{
+    transform: translate(15px,-5px);
+}
+
+/*------------------------------gray---------------------------------*/
+.grey{
+    background-color: #eee;
+    padding-top: 90px;
+}
+
+.grey i{
+    font-size: 56px;
+    margin-top: 120px;
+    display: inline-block;
+}
+
+.grey .right{
+    margin-left: 120px;
+    margin-bottom: 150px;
+}
+
+.grey .right p{
+    margin-top: 30px;
+}
+
+@media(max-width: 992px){
+    .grey i {
+        margin-top: 0;
+    }
+
+    .grey .right{
+        margin-top: 0;
+    }
+
+    .grey .right{
+        margin-bottom: 50px;
+    }
+}
+
+/*------------------------------footer-----------------------------------*/
+footer{
+    padding: 60px 0;
+}
+
+footer p {
+    font-size: 14px;
+    color: #666;
+}
+
+footer a,
+footer a:hover{
+    color: #a980cd;
+}
+
+footer div i{
+    font-size: 48px !important;
+    transition: color 0.5s;
+}
+
+footer div i:hover{
+    color: #a980cd;
+}
+
+
+
